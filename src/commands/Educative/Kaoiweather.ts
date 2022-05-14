@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-        if (!joined) return void M.reply('Please provide me the place name.')
+        if (!joined) return void M.reply('Please provide me the place name to be searched for.')
         const place = joined.trim()
         await axios
             .get(
@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
                 M.reply(text)
             })
             .catch((err) => {
-                M.reply(`Sorry, couldn't find any state or place name related to *${place}*.`)
+                M.reply(`Sorry Love, couldn't find any state or place name related to *${place}*.`)
             })
     }
 }
