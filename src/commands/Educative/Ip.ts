@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-        if (!joined) return void (await M.reply(`Please provide the IP Address`))
+        if (!joined) return void (await M.reply(`love Please provide the IP Address`))
         const pypi = joined.trim()
         await axios
             .get(`http://ip-api.com/json/${pypi}`)
