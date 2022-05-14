@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
 		{ joined }: IParsedArgs
 	): Promise<void> => {
 		if (!joined)
-			return void (await M.reply(`Please provide the Broadcast Message.`));
+			return void (await M.reply(`Please provide the Broadcast Message you want to display.`));
 		const term = joined.trim();
 		const gifs = [
 			"https://c.tenor.com/Giv4A22u3KUAAAPo/zero-two-smile.mp4",
