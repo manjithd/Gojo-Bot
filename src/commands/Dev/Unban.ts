@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
         if (M.quoted?.sender) M.mentioned.push(M.quoted.sender)
         if (!M.mentioned.length || !M.mentioned[0])
-            return void M.reply('My Darling please mention the user whom you want to unban')
+            return void M.reply('My Love please mention the user whom you want to unban')
         let text = '*STATE*\n\n'
         for (const user of M.mentioned) {
             const data = await this.client.getUser(user)
@@ -30,7 +30,7 @@ export default class Command extends BaseCommand {
                 continue
             }
             await this.client.unbanUser(user)
-            text += `🟩 @${user.split('@')[0]}: Darling is now Unbanned\n`
+            text += `🟩 @${user.split('@')[0]}: Love is now Unbanned\n`
         }
         // M.reply(text)
         await M.reply(
