@@ -58,7 +58,7 @@ export default class Command extends BaseCommand {
 				} else if (exp < 100000) {
 					role = "💎 Supreme";
 				} else {
-					role = "📍 My Immortal Darling 📍";
+					role = "📍 My Immortal Love 📍";
 				}
 
 				let level: number;
