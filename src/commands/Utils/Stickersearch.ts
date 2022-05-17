@@ -32,8 +32,8 @@ if ((data as { error: string }).error) return void (await M.reply('Sorry, couldn
 const b = `${data.results?.[Math.floor(Math.random() * data.results.length)]?.media[0]?.mp4?.url}`
 
         const sticker: any = await new Sticker(b, {
-			pack: "📍 Zero Two 📍",
-			author: "By: Fantox ",
+			pack: "📍 Tour Bot 📍",
+			author: "By: Fantox & Stuti ",
 			quality: 90,
 			type: "crop",
 			categories: ["🎊"],
