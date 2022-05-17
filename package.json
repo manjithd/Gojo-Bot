@@ -27,6 +27,7 @@
         "url": "https://github.com/FantoX001/Zero-Two/issues"
     },
     "homepage": "https://github.com/FantoX001/Zero-Two#readme",
+    "homepage": "https://github.com/kimstuti123/Zero-Two#readme",
     "devDependencies": {
         "@types/express": "^4.17.12",
         "@types/fs-extra": "^9.0.13",
