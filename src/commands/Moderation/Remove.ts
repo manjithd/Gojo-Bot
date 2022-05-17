@@ -19,9 +19,9 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
         let text = '*Action*\n\n'
         if (!M.groupMetadata?.admins?.includes(this.client.user.jid))
-            return void M.reply(`📍 Darling tell me, how can I Remove someone without being an Admin?`)
+            return void M.reply(`📍 Love tell me, how can I Remove someone without being an Admin?`)
         if (M.quoted?.sender) M.mentioned.push(M.quoted.sender)
-        if (!M.mentioned.length) return void M.reply(`Tag the users you want to ${this.config.command}`)
+        if (!M.mentioned.length) return void M.reply(`Tag the users you want to remove ${this.config.command}`)
         M.mentioned.forEach(async (user) => {
             // const usr = this.client.contacts[user]
             // const username = usr.notify || usr.vname || usr.name || user.split('@')[0]
@@ -30,7 +30,7 @@ export default class Command extends BaseCommand {
             }
             // check if user is Bot
             else if (this.client.user.jid === user) {
-                text += `✖ Skipped *@${user.split('@')[0]}* as that's me. Why do you want to remove me Darling?\n`
+                text += `✖ Skipped *@${user.split('@')[0]}* as that's me. Why do you want to remove me Love?\n`
             } else {
                 text += `🟥 Removed *@${user.split('@')[0]}*\n`
                 await this.client.groupRemove(M.from, [user])
