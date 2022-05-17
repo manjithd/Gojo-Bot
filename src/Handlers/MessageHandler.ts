@@ -98,7 +98,7 @@ export default class MessageHandler {
                     MessageType.video,
                     Mimetype.gif,
                     undefined,
-                    `*${M.sender.username}* Darling you are using wrong command. Please type *${this.client.config.prefix}help* to know my commands.`,
+                    `*${M.sender.username}* Love you are using wrong command. Please type *${this.client.config.prefix}help* to know my commands.`,
                     undefined
                 )
 		const user = await this.client.getUser(M.sender.jid);
@@ -113,16 +113,16 @@ export default class MessageHandler {
 				}`
 			);
 		if (!command.config?.dm && M.chat === "dm")
-			return void M.reply("Darling this command can only be used in groups.");
+			return void M.reply("Love this command can only be used in groups.");
 		if (
 			command.config?.modsOnly &&
 			!this.client.config.mods?.includes(M.sender.jid)
 		) {
-			return void M.reply(`Darling only MODS are allowed to use this command.`);
+			return void M.reply(`Love only MODS are allowed to use this command.`);
 		}
 		if (command.config?.adminOnly && !M.sender.isAdmin)
 			return void M.reply(
-				`Darling this command is only made for the group admins, Baka!`
+				`Love this command is only made for the group admins, Baka!`
 			);
 		try {
 			await command.run(M, this.parseArgs(args));
