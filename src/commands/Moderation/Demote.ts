@@ -17,7 +17,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         if (!M.groupMetadata?.admins?.includes(this.client.user.jid))
-            return void M.reply(`📍 Darling tell me, how can I Demote someone without being an Admin?`)
+            return void M.reply(`📍 Love tell me, how can I Demote someone without being an Admin?`)
         if (M.quoted?.sender) M.mentioned.push(M.quoted.sender)
         if (!M.mentioned.length) return void M.reply(`Tag the users you want to ${this.config.command}`)
         M.mentioned.forEach(async (user) => {
