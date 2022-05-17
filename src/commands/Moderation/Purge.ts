@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
         if (!this.purgeSet.has(M.groupMetadata?.id || '')) {
             this.addToPurge(M.groupMetadata?.id || '')
             return void M.reply(
-                "📍 Are you sure Darling? This will remove everyone from the group chat. Use this command again if you'd like to proceed"
+                "📍 Are you sure Love? This will remove everyone from the group chat. Use this command again if you'd like to proceed"
             )
         }
         M.groupMetadata.participants.map(async (user) => {
