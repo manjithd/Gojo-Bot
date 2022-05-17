@@ -38,7 +38,7 @@ export default class Command extends BaseCommand {
             MessageType.video,
             Mimetype.gif,
             undefined,
-            `『 ℤ𝔼ℝ𝕆 𝕋𝕎𝕆 』\n\n🔮 *Total Groups: ${
+            `『 Tour Bot 』\n\n🔮 *Total Groups: ${
 				chats.length
 					}*\n\n📍 *Last Re-booted: ${uptime()}*\n\n *📍 My cute people: ${users}*\n\n💢  *Banned Users: ${uban}*\n\n\n  *Developer: Fantox*\n\n`,
                     undefined
