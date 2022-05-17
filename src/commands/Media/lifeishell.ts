@@ -20,9 +20,9 @@ export default class Command extends BaseCommand {
     // static count = 0
      run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {    
         if (!joined) return void M.reply('Give me url of tiktok baka')
-        const zerotwo = joined.trim()
-        console.log(zerotwo)
-        const { data } = await axios.get(`https://ravindumanoj-sew-api.herokuapp.com/main/download/tiktok?url=${zerotwo}&apikey=RavinduManoj`)
+        const tourbot = joined.trim()
+        console.log(tourbot)
+        const { data } = await axios.get(`https://ravindumanoj-sew-api.herokuapp.com/main/download/tiktok?url=${tourbot}&apikey=RavinduManoj`)
         if ((data as { error: string }).error) return void (await M.reply('Sorry, couldn\'t find'))
         const buffer = await request.buffer(data.result.wm).catch((e) => {
             return void M.reply(e.message)
@@ -34,7 +34,7 @@ export default class Command extends BaseCommand {
                     MessageType.video,
                     undefined,
                     undefined,
-                    `💐 *Result: ${zerotwo} has been found*\n`,
+                    `💐 *Result: ${tourbot} has been found*\n`,
                     undefined
                 ).catch((e) => {
                     console.log(`This error occurs when an image is sent via M.reply()\n Child Catch Block : \n${e}`)
