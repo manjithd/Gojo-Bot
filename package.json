@@ -1,11 +1,11 @@
 {
-    "name": "Zerotwo",
+    "name": "TourBot",
     "version": "3.0.0",
-    "description": "A WhatsApp Bot With Rich Anime Features Developed by: Fantox.",
-    "main": "dist/zerotwo.js",
+    "description": "A WhatsApp Bot With Rich Anime Features Developed by: Fantox & Stuti.",
+    "main": "dist/Tourbot.js",
     "scripts": {
         "build": "tsc -p .",
-        "start": "node dist/zerotwo.js",
+        "start": "node dist/Tourbot.js",
         "lint": "eslint \"src/**/*.ts\"",
         "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write",
         "postinstall": "yarn run build"
@@ -13,6 +13,7 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/FantoX001/Zero-Two.git"
+        "url": "https://github.com/kimstuti123/Zero-Two.git"
     },
     "keywords": [
         "bot",
@@ -20,7 +21,7 @@
         "whatsapp",
         "chitoge"
     ],
-    "author": "Fantox",
+    "author": "Fantox & Stuti",
     "license": "AGPL-3.0",
     "bugs": {
         "url": "https://github.com/FantoX001/Zero-Two/issues"
