@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'bdsm',
-            description: `Will send you random BSDM img.`,
+            description: `Will send you random BDSM img.`,
             aliases: ['bdsm'],
             category: 'nsfw',
             usage: `${client.config.prefix}bdsm`,
