@@ -45,7 +45,7 @@ export default class Command extends BaseCommand {
             let text = `
 ╭──────────────────𐏋
 │⋊ 𝕌𝕤𝕖𝕣: *${M.sender.username}*
-│⋊ ℕ𝕒𝕞𝕖: Zero Two
+│⋊ ℕ𝕒𝕞𝕖: Tour Bot
 │⋊ ℙ𝕣𝕖𝕗𝕚𝕩: ${this.client.config.prefix}
 │⋊ 𝕆𝕨𝕟𝕖𝕣: *${this.client.config.prefix}mod*
 │⋊ 𝕆𝕗𝕗𝕚𝕥𝕚𝕒𝕝 𝕊𝕦𝕡𝕡𝕠𝕣𝕥 𝔾𝕣𝕠𝕦𝕡: http://gg.gg/10xtwj
@@ -62,16 +62,16 @@ export default class Command extends BaseCommand {
             caption: `${text} 
  
  
- ──❅┈[ 𝑍𝑒𝑟𝑜 𝑇𝑤𝑜 𝐵𝑜𝑡 ]┈❅──
+ ──❅┈[ Tour 𝐵𝑜𝑡 ]┈❅──
  
  
 ┌────────────┈❅
-│   『 Zero Two 』
+│   『 Tour Bot』
 │   Based on: Chitoge and Void
 │   Reverse Engineer: Fantox
 └────────────┈⁂
 
-🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info and don't spam or call Zero Two.*` }
+🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info and don't spam or call Tour Bot.*` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
