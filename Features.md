@@ -93,3 +93,4 @@
 | github | sends github account and repo link |
 | weather | sends you weather report of a place|
 | calculator | calculates equations |
+| translator | translates given text to preferfered lang|
