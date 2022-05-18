@@ -10,7 +10,7 @@ import axios from "axios";
 export default class Command extends BaseCommand {
 	constructor(client: WAClient, handler: MessageHandler) {
 		super(client, handler, {
-			command: "Translate to kr",
+			command: "Translate",
 			aliases: ["ur"],
 			description: "Gives you the translation of the given word. ",
 			category: "educative",
@@ -23,11 +23,14 @@ export default class Command extends BaseCommand {
 		M: ISimplifiedMessage,
 		{ joined }: IParsedArgs
 	): Promise<void> => {
-		if (!joined) return void M.reply("Please provide a word .");
+		if (!joined) return void M.reply("Please provide a word/text to translate.");
 		const term = joined.trim();
 		console.log(term, joined);
+		if(!learn) return void M.reply("which kanguage you want to translate the text or word to.")
+		const lang = learn.trim();
+		console.link(lang, learn);
 		await axios
-			.get(`https://www.bing.com/translator?term=${term}ref=term=&from=en&to=ko`)
+			.get(`https://www.bing.com/translator?term=${term}ref=term=&from=en&to={lang}`)
 			.then((response) => {
 				// console.log(response);
 				const text = `📚 *Microsoft translator :* ${term}\n\n📖 *Translation :* ${response.data.list[0].translation
