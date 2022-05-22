@@ -13,7 +13,7 @@ A Fully Modular, fast and Efficient Bot. <br>
     
     
 <br/>   
-Deply Zero Two form Heroku
+Deply Gojo form Heroku
 
 
 <br>[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/FantoX001/Zero-Two)
