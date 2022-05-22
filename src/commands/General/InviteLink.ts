@@ -29,10 +29,10 @@ export default class Command extends BaseCommand {
                 `*Invite link:* https://chat.whatsapp.com/${code}`,
                 MessageType.text
             )
-            return void M.reply('📍 Love i just sent you the Group Link in personal message. Pls check your dm.')
+            return void M.reply('⚡️ Love i just sent you the Group Link in personal message. Pls check your dm.')
         } else {
             return void M.reply(
-                `📍 Oops, this command is not enabled by the Admins.\nUse *${this.client.config.prefix}act invitelink* to enable it`
+                `⚡️ Oops, this command is not enabled by the Admins.\nUse *${this.client.config.prefix}act invitelink* to enable it`
             )
         }
     }
