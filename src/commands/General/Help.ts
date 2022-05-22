@@ -67,7 +67,7 @@ export default class Command extends BaseCommand {
 ┌────────────┈❅
 │   『 Gojo Bot 』
 │   Based on: Chitoge and Void
-│   Reverse Engineer: Fantox & stuti
+│   Reverse Engineer: Fantox & Stuti
 └────────────┈⁂
 
 🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info and don't spam or call Tour Bot.*` }
