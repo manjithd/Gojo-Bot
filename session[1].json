@@ -50,8 +50,8 @@
     },
     "me": {
       "id": "94717428026:25@s.whatsapp.net",
-      "verifiedName": "Isuru Manjitha Dharmasiri",
-      "name": "Isuru Manjitha Dharmasiri"
+      "verifiedName": "MANJITH D SILWA",
+      "name": "MANJITH D SILWA"
     },
     "signalIdentities": [
       {
@@ -365,7 +365,7 @@
       }
     },
     "sessions": {
-      "94763642863.0": {
+      "94717428026.0": {
         "_sessions": {
           "BcHhRwdRbemUZzmnPSEeSoVa1zbdHyFx2BZmLJ6QyrVJ": {
             "registrationId": 405651905,
@@ -453,7 +453,7 @@
         },
         "version": "v1"
       },
-      "94711279165.0": {
+      "94717428026.0": {
         "_sessions": {
           "Bfgq6Eun/R3Qmek1FQ5w8Pg7wTGDa7+2Xp9kID0lKpNx": {
             "registrationId": 531773416,
@@ -498,7 +498,7 @@
       }
     },
     "senderKeys": {
-      "120363026771397053@g.us::94763642863::0": [
+      "120363026771397053@g.us::94717428026::0": [
         {
           "senderKeyId": 1702127842,
           "senderChainKey": {
@@ -510,7 +510,7 @@
           }
         }
       ],
-      "120363042578015773@g.us::94711279165::0": [
+      "120363042578015773@g.us::94717428026::0": [
         {
           "senderKeyId": 814072412,
           "senderChainKey": {
